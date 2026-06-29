@@ -449,7 +449,7 @@ WHERE D.nDesign > 0;
 
 
 
--- 14- Calculate the percentage of CLOs per course that are at ‘APPLY’ level in Bloom’s taxonomy. For the purpose of this assignment, these would be CLOs that use one of these verbs: (Apply, Use, Implement, Demonstrate, Interpret, Execute, Solve, Calculate).
+-- 14- Calculate the percentage of CLOs per course that are at ‘APPLY’ level in Bloom’s taxonomy. Here, these would be CLOs that use one of these verbs: (Apply, Use, Implement, Demonstrate, Interpret, Execute, Solve, Calculate).
 SELECT C_CODE,
        (SUM(CASE 
             WHEN LOWER(CLO_DESC) LIKE '%apply%' OR
